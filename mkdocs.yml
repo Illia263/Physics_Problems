@@ -52,8 +52,7 @@ plugins:
               - 'Astronomia i Astrofizyka': 'Twoje_rozwiazania/08_Astronomy_and_Astrophysics_solution/index.md'
               - Kosmologia: 'Twoje_rozwiazania/09_Cosmology_solution/index.md'
               - 'Teoria Względności': 'Twoje_rozwiazania/10_Relativity_solution/index.md'
-              - 'Fizyka Współczesna 1': 'Twoje_rozwiazania/11_Modern_Physics_1_solution/index.md'
-              - 'Fizyka Współczesna 2': 'Twoje_rozwiazania/12_Modern_Physics_2_solution/index.md'
+              - 'Fizyka Współczesna': 'Twoje_rozwiazania/11_Modern_Physics_solution/index.md'
             - Animations:
               - 'Projectile Motion': 'Animations/projectile_motion.html'
               - 'Pendulum': 'Animations/pendulum.html'
@@ -77,8 +76,7 @@ plugins:
             - Astronomia i Astrofizyka: '08_Astronomy_and_Astrophysics.md'
             - Kosmologia: '09_Cosmology.md'
             - Teoria Względności: '10_Relativity.md'
-            - Fizyka Współczesna 1: '11_Modern_Physics_1.md'
-            - Fizyka Współczesna 2: '12_Modern_Physics_2.md'
+            - Fizyka Współczesna: '11_Modern_Physics.md'
         - locale: en
           name: English
           default: true
@@ -97,8 +95,7 @@ plugins:
               - 'Astronomy and Astrophysics': 'Your_solutions/08_Astronomy_and_Astrophysics_solution/index.md'
               - Cosmology: 'Your_solutions/09_Cosmology_solution/index.md'
               - Relativity: 'Your_solutions/10_Relativity_solution/index.md'
-              - 'Modern Physics 1': 'Your_solutions/11_Modern_Physics_1_solution/index.md'
-              - 'Modern Physics 2': 'Your_solutions/12_Modern_Physics_2_solution/index.md'
+              - 'Modern Physics': 'Your_solutions/11_Modern_Physics_solution/index.md'
             - Animations:
               - 'Projectile Motion': 'Animations/projectile_motion.html'
               - 'Pendulum': 'Animations/pendulum.html'
@@ -122,5 +119,4 @@ plugins:
             - 'Astronomy and Astrophysics': '08_Astronomy_and_Astrophysics.md'
             - Cosmology: '09_Cosmology.md'
             - Relativity: '10_Relativity.md'
-            - 'Modern Physics 1': '11_Modern_Physics_1.md'
-            - 'Modern Physics 2': '12_Modern_Physics_2.md'
+            - 'Modern Physics': '11_Modern_Physics.md'

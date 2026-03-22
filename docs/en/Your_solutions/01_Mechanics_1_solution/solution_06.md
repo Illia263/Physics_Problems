@@ -114,26 +114,4 @@ $$
 
 ## Plot the velocity and acceleration
 
-### Velocity plot: $v(t) = t^2 + 2t - 5$
-
-The velocity function is a parabola opening upward with vertex at $t = -1$:
-- At $t = -1$: $v(-1) = 1 - 2 - 5 = -6$ (minimum velocity)
-- At $t = 0$: $v(0) = -5$
-- At $t = 3$: $v(3) = 9 + 6 - 5 = 10$
-
-The function crosses zero at $t \approx 1.45$ and $t \approx -3.45$.
-
-### Acceleration plot: $a(t) = 2t + 2$
-
-The acceleration function is a linear function:
-- At $t = 0$: $a(0) = 2$
-- At $t = 3$: $a(3) = 8$
-- Crosses zero at $t = -1$
-
-The acceleration is always increasing (constant slope = 2) and becomes increasingly positive for $t > -1$.
-
-![Velocity and Acceleration plots](plots.png)
-
-Ctr+V
-
-![alt text](image.png)
+![Velocity and Acceleration Plots](velocity_acceleration_plots.png)

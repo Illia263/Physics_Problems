@@ -50,3 +50,5 @@ $$R \approx 979.2 \text{ m}$$ _(using exact fraction $\frac{120}{9.8}$ yields $\
 - **Range:** $\approx 979.59 \text{ m}$
 
 Would you like to move to the next mechanics problem?
+
+...

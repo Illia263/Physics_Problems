@@ -38,7 +38,7 @@ b) by a spacecraft traveling at a constant speed of 40,000 km/h = 11.11 km/s?
 
 c) by "airplane" traveling at a constant speed of 900 km/h, typical for intercontinental flights?
 
-## 9. Aristarchus’ Method
+## 9. Size and distance of the Sun
 
 Aristarchus from Samos (310–230 BC) was an ancient Greek astronomer who attempted to determine the relative distances and sizes of the Sun and the Moon using geometric methods based on observations of lunar phases.
 
