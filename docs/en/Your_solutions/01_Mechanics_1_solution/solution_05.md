@@ -1,190 +1,44 @@
-# 6. Variable Velocity — Step-by-step Solution
+Here is the direct, step-by-step solution for the relative velocity problem.
 
-## Most useful definitions and formulas
+### Problem 5: Relative Velocity
 
-### 1) Position, velocity, acceleration (1D motion)
+**Given:**
 
-- **Position**: $x(t)$ — where the object is on a line at time $t$.
-- **Velocity**: $v(t)$ — how fast and in which direction position changes.
+- Velocity of river ($v_r$): $2\text{ m/s}$ (East)
+- Speed of boat in still water ($v_{bw}$): $5\text{ m/s}$
+- Desired path: Directly North
+- River width ($d$): $200\text{ m}$
 
-$$
-v(t)=\frac{dx}{dt}
-$$
+**Goal:** Find the heading angle and the time to cross.
 
-- **Acceleration**: $a(t)$ — how fast velocity changes.
+**Step 1: Determine the heading direction (angle)**
+To travel directly north, the boat must steer into the current (West of North) so its horizontal velocity exactly cancels out the river's eastward flow. We form a right triangle with the velocity vectors.
 
-$$
-a(t)=\frac{dv}{dt}=\frac{d^2x}{dt^2}
-$$
+- Hypotenuse (boat's speed in still water): $5\text{ m/s}$
+- Opposite side (river's speed): $2\text{ m/s}$
 
-### 2) How to get position from velocity
+Let $\theta$ be the angle West of North:
+$$\sin(\theta) = \frac{\text{Opposite}}{\text{Hypotenuse}}$$
+$$\sin(\theta) = \frac{2}{5} = 0.4$$
+$$\theta = \arcsin(0.4) \approx 23.58^\circ$$
 
-If you know $v(t)$, then $x(t)$ is an antiderivative of $v(t)$:
+**Step 2: Calculate the net velocity directly North ($v_{net}$)**
+Use the Pythagorean theorem to find the adjacent side of the velocity triangle, which represents the boat's actual speed straight across the river.
+$$v_{net}^2 + v_r^2 = v_{bw}^2$$
+$$v_{net}^2 + 2^2 = 5^2$$
+$$v_{net}^2 + 4 = 25$$
+$$v_{net}^2 = 21$$
+$$v_{net} = \sqrt{21} \approx 4.58\text{ m/s}$$
 
-$$
-x(t)=\int v(t)\,dt + C
-$$
+**Step 3: Calculate the time to cross ($t$)**
+Use the total width of the river and the net northward velocity.
+$$t = \frac{\text{Distance}}{v_{net}}$$
+$$t = \frac{200}{\sqrt{21}}$$
+$$t \approx 43.64\text{ s}$$
 
-You find the constant $C$ using an **initial condition**, e.g. $x(0)=x_0$.
+**Final Answer:**
 
-### 3) How to get acceleration from velocity
+- **Direction:** $\approx 23.58^\circ$ West of North
+- **Time to cross:** $\approx 43.64\text{ seconds}$
 
-Differentiate velocity:
-
-$$
-a(t)=\frac{dv}{dt}
-$$
-
----
-
-## Problem statement
-
-Velocity:
-
-$$
-v(t)=t^2+2t-5
-$$
-
-Initial condition:
-
-$$
-x(0)=4
-$$
-
-Find:
-- the **position** at $t=3$, i.e. $x(3)$
-- the **acceleration** at $t=3$, i.e. $a(3)$
-
----
-
-## Step 1 — Find acceleration from velocity
-
-By definition:
-
-$$
-a(t)=\frac{dv}{dt}
-$$
-
-Differentiate $v(t)$ term-by-term:
-
-$$
-a(t)=\frac{d}{dt}(t^2+2t-5)=2t+2
-$$
-
-Now evaluate at $t=3$:
-
-$$
-a(3)=2\cdot 3 + 2 = 8
-$$
-
-**Result:**
-
-$$
-a(3)=8
-$$
-
----
-
-## Step 2 — Find the position function $x(t)$
-
-Velocity is the derivative of position:
-
-$$
-v(t)=\frac{dx}{dt}
-$$
-
-So position is the integral of velocity:
-
-$$
-x(t)=\int (t^2+2t-5)\,dt
-$$
-
-Integrate term-by-term:
-
-- $\int t^2\,dt=\frac{t^3}{3}$
-- $\int 2t\,dt=t^2$
-- $\int (-5)\,dt=-5t$
-
-So:
-
-$$
-x(t)=\frac{t^3}{3}+t^2-5t+C
-$$
-
----
-
-## Step 3 — Use the initial condition to find $C$
-
-We know:
-
-$$
-x(0)=4
-$$
-
-Substitute $t=0$ into the formula for $x(t)$:
-
-$$
-x(0)=\frac{0^3}{3}+0^2-5\cdot 0 + C = C
-$$
-
-So:
-
-$$
-C=4
-$$
-
-Therefore the **position function** is:
-
-$$
-x(t)=\frac{t^3}{3}+t^2-5t+4
-$$
-
----
-
-## Step 4 — Evaluate position at $t=3$
-
-Substitute $t=3$:
-
-$$
-x(3)=\frac{3^3}{3}+3^2-5\cdot 3+4
-$$
-
-Compute step-by-step:
-
-$$
-x(3)=\frac{27}{3}+9-15+4
-$$
-
-$$
-x(3)=9+9-15+4
-$$
-
-$$
-x(3)=18-15+4
-$$
-
-$$
-x(3)=3+4=7
-$$
-
-**Result:**
-
-$$
-x(3)=7
-$$
-
----
-
-## Final answers
-
-Position at $t=3$:
-
-$$
-x(3)=7
-$$
-
-Acceleration at $t=3$:
-
-$$
-a(3)=8
-$$
+Would you like to move on to the next problem?
