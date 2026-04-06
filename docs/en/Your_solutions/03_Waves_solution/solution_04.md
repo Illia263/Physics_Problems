@@ -1,25 +1,25 @@
-### Problem 5: Echo Ranging
+### Problem 4: Phase Difference
 
 **Given:**
-* Total time for the echo ($t_{total}$): $1 \text{ s}$
-* Speed of sound in air ($v$): $343 \text{ m/s}$
+* Distance separation ($\Delta x$): $\lambda/3$
 
-**Goal:** Find the distance from the person to the cliff ($d$).
+**Goal:** Find the phase difference ($\Delta \phi$) in radians.
 
-**Step 1: Relate distance, speed, and time for an echo**
-When a person shouts, the sound wave must travel all the way to the cliff and then reflect all the way back to be heard as an echo. This means the total distance the sound wave travels is twice the distance to the cliff ($2d$).
-$$2d = v \cdot t_{total}$$
+**Step 1: Use the relationship between phase difference and path difference**
+The phase difference $\Delta \phi$ between two points on a wave is directly proportional to the physical distance $\Delta x$ between them. The proportionality constant is the wave number $k$.
+$$\Delta \phi = k \cdot \Delta x$$
 
-**Step 2: Solve for the distance ($d$)**
-Rearrange the equation to isolate $d$:
-$$d = \frac{v \cdot t_{total}}{2}$$
+**Step 2: Express the wave number $k$ in terms of wavelength**
+Recall that $k = \frac{2\pi}{\lambda}$. Substitute this into the equation:
+$$\Delta \phi = \left(\frac{2\pi}{\lambda}\right) \cdot \Delta x$$
 
-**Step 3: Calculate the distance**
-Substitute the known values into the equation:
-$$d = \frac{343 \cdot 1}{2}$$
-$$d = 171.5 \text{ m}$$
+**Step 3: Calculate the phase difference**
+Substitute the given distance separation $\Delta x = \frac{\lambda}{3}$ into the equation:
+$$\Delta \phi = \left(\frac{2\pi}{\lambda}\right) \cdot \left(\frac{\lambda}{3}\right)$$
+The wavelength $\lambda$ in the numerator and denominator cancel each other out:
+$$\Delta \phi = \frac{2\pi}{3}$$
 
 ---
 
 **Final Answer:**
-The cliff is **$171.5 \text{ m}$** away.
+The phase difference between the two points is **$\frac{2\pi}{3} \text{ radians}$**.
