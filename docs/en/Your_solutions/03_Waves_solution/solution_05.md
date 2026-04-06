@@ -1,49 +1,25 @@
-### Problem 6: Wave Equation
+### Problem 5: Echo Ranging
 
 **Given:**
-* Wave equation: $y(x,t) = 0.05 \sin(2\pi x - 50\pi t)$
-* $x$ and $y$ are in meters, $t$ is in seconds.
+* Total time for the echo ($t_{total}$): $1 \text{ s}$
+* Speed of sound in air ($v$): $343 \text{ m/s}$
 
-**Goal:** Determine the wave's amplitude ($A$), wavelength ($\lambda$), frequency ($f$), and wave speed ($v$).
+**Goal:** Find the distance from the person to the cliff ($d$).
 
-**Step 1: Compare to the standard wave equation**
-The standard mathematical form of a traveling wave is:
-$$y(x,t) = A \sin(kx - \omega t)$$
-By matching the terms in our given equation to the standard form, we can extract three key parameters:
-* Amplitude ($A$): $0.05 \text{ m}$
-* Wave number ($k$): $2\pi \text{ rad/m}$
-* Angular frequency ($\omega$): $50\pi \text{ rad/s}$
+**Step 1: Relate distance, speed, and time for an echo**
+When a person shouts, the sound wave must travel all the way to the cliff and then reflect all the way back to be heard as an echo. This means the total distance the sound wave travels is twice the distance to the cliff ($2d$).
+$$2d = v \cdot t_{total}$$
 
-**Step 2: Calculate the wave properties**
+**Step 2: Solve for the distance ($d$)**
+Rearrange the equation to isolate $d$:
+$$d = \frac{v \cdot t_{total}}{2}$$
 
-**a) Amplitude ($A$):**
-This can be read directly from our matched parameters.
-$$A = 0.05 \text{ m}$$
-
-**b) Wavelength ($\lambda$):**
-The wave number $k$ is related to wavelength by the formula $k = \frac{2\pi}{\lambda}$. Rearranging for $\lambda$:
-$$\lambda = \frac{2\pi}{k}$$
-$$\lambda = \frac{2\pi}{2\pi}$$
-$$\lambda = 1 \text{ m}$$
-
-**c) Frequency ($f$):**
-The angular frequency $\omega$ is related to standard frequency by the formula $\omega = 2\pi f$. Rearranging for $f$:
-$$f = \frac{\omega}{2\pi}$$
-$$f = \frac{50\pi}{2\pi}$$
-$$f = 25 \text{ Hz}$$
-
-**d) Wave speed ($v$):**
-Wave speed can be calculated by multiplying frequency and wavelength (or by dividing $\omega$ by $k$).
-$$v = f \cdot \lambda$$
-$$v = 25 \cdot 1$$
-$$v = 25 \text{ m/s}$$
+**Step 3: Calculate the distance**
+Substitute the known values into the equation:
+$$d = \frac{343 \cdot 1}{2}$$
+$$d = 171.5 \text{ m}$$
 
 ---
 
 **Final Answer:**
-* **a) Amplitude:** $0.05 \text{ m}$
-* **b) Wavelength:** $1 \text{ m}$
-* **c) Frequency:** $25 \text{ Hz}$
-* **d) Wave speed:** $25 \text{ m/s}$
-
-Ready for Problem 7?
+The cliff is **$171.5 \text{ m}$** away.
