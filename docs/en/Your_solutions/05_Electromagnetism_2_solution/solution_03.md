@@ -1,34 +1,50 @@
-**Concept:**
-According to the Biot-Savart Law, the magnetic field contribution ($dB$) from a small straight current element is proportional to the current ($I$), the length of the element ($dl$), and the sine of the angle ($\theta$) between the element and the position vector to the point, and inversely proportional to the square of the distance ($r$).
+# Physics Problem Solution: Biot-Savart Law
 
-**Given:**
-*   Current ($I$) = **3 A**
-*   Length of segment ($dl$) = **0.1 m**
-*   Distance to point P ($r$) = **0.2 m**
-*   Angle ($\theta$) = **$90^\circ$** (segment is perpendicular to the line connecting to P)
-*   Permeability constant ($\frac{\mu_0}{4\pi}$) = **$10^{-7} \text{ T}\cdot\text{m/A}$**
+**Problem Statement:**
+A small segment of a line wire of length $0.1 \text{ m}$ carries a current of $3 \text{ A}$. The segment is located at a distance of $0.2 \text{ m}$ from a point $P$. Calculate the magnetic field at point $P$ due to this current segment (assume the segment is perpendicular to the line connecting it to point $P$).
 
-**Formula:**
-$$
-dB = \frac{\mu_0}{4\pi} \frac{I \cdot dl \cdot \sin(\theta)}{r^2}
-$$
+---
 
-**Calculation:**
-$$
-dB = (10^{-7}) \frac{3 \cdot 0.1 \cdot \sin(90^\circ)}{(0.2)^2}
-$$
+## 1. Given Data
 
-$$
-dB = (10^{-7}) \frac{0.3 \cdot 1}{0.04}
-$$
+*   **Length of the wire segment ($dl$):** $0.1 \text{ m}$
+*   **Current ($I$):** $3 \text{ A}$
+*   **Distance to point $P$ ($r$):** $0.2 \text{ m}$
+*   **Angle between segment and position vector ($\theta$):** $90^\circ$ (the problem states the segment is perpendicular to the line connecting it to point $P$).
+*   **Vacuum permeability constant ($\mu_0$):** $4\pi \times 10^{-7} \text{ T}\cdot\text{m/A}$
 
-$$
-dB = (10^{-7}) \cdot 7.5
-$$
+## 2. Relevant Formula
 
-$$
-dB = 7.5 \times 10^{-7} \text{ T}
-$$
+To find the magnetic field created by a small, finite segment of wire, we use the magnitude form of the **Biot-Savart Law**:
 
-**Answer:**
-The magnetic field at point P is **$7.5 \times 10^{-7} \text{ T}$**.
+$$dB = \frac{\mu_0}{4\pi} \frac{I \cdot dl \cdot \sin(\theta)}{r^2}$$
+
+Where:
+*   $dB$ is the infinitesimally small magnetic field.
+*   $\frac{\mu_0}{4\pi}$ is the magnetic constant, which simplifies exactly to $10^{-7} \text{ T}\cdot\text{m/A}$.
+
+## 3. Step-by-Step Calculation
+
+**Step 1: Determine the value of the sine term.**
+Since the current segment is perpendicular to the radial distance $r$, $\theta = 90^\circ$.
+$$\sin(90^\circ) = 1$$
+
+**Step 2: Substitute the known values into the equation.**
+$$dB = (10^{-7}) \cdot \frac{3 \cdot 0.1 \cdot 1}{(0.2)^2}$$
+
+**Step 3: Simplify the numerator and denominator.**
+*   Numerator: $3 \cdot 0.1 = 0.3 \text{ A}\cdot\text{m}$
+*   Denominator: $(0.2)^2 = 0.04 \text{ m}^2$
+
+$$dB = 10^{-7} \cdot \frac{0.3}{0.04}$$
+
+**Step 4: Calculate the final value.**
+$$\frac{0.3}{0.04} = 7.5$$
+
+$$dB = 7.5 \times 10^{-7} \text{ T}$$
+
+## 4. Final Answer
+
+The magnetic field at point $P$ due to the current segment is:
+
+**$$dB = 7.5 \times 10^{-7} \text{ T}$$** *(or $0.75 \text{ \mu T}$)*
