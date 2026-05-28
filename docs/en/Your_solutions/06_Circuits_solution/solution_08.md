@@ -1,10 +1,9 @@
-
 ### **1. Given Information**
 
 From the problem, we have the following values:
 
-* **Current Function ($I(t)$):** $2\sin(120\pi t)$ A
-* **Resistance ($R$):** $50\,\Omega$
+* **Current Function** $I(t)$: $2\sin(120\pi t)\text{ A}$
+* **Resistance** $R$: $50\,\Omega$
 
 ### **2. The Formula**
 
